@@ -14,7 +14,7 @@ require('pagination');
 
 
 // 左侧菜单效果
-pb.slide();
+pb.slide([1,0]);
 // 美化checkbox 和全选
 pb.checkbox('.ck-input')
 
@@ -23,6 +23,7 @@ $(".s-select").select2({
     minimumResultsForSearch: -1,
 });
 
+
 // 初始化日期
 laydate({
     elem: '#start-date'
@@ -30,6 +31,25 @@ laydate({
 laydate({
     elem: '#end-date'
 });
+
+
+// 弹窗-新增
+
+$('.dispactchd-add').click(function(){
+	var dialog=layer.open({
+		type:1,
+		area:['900px','300px'],
+		title:'新增',
+		content:$('.dispactched-add-box')
+	})
+	$(".s-select2").select2({
+	    // minimumResultsForSearch: -1,
+	});
+
+})
+
+
+
 
 
         

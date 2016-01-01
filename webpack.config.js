@@ -19,7 +19,7 @@ function getEntry() {
             files[matchs[1]] = path.resolve(srcDir, 'js', item);
         }
     });
-    files.lib=["jquery", "layer",'pagination','echarts','laydate']
+    files.lib=["jquery", "layer",'pagination','laydate','select2','validform']
     return files;
 }
 module.exports = {
@@ -55,7 +55,6 @@ module.exports = {
         //         warnings: false
         //     }
         // }),
-        // new optimize.CommonsChunkPlugin('common.js'),
         new optimize.CommonsChunkPlugin({
              name: ["common","lib"],
             // 必须最先加载

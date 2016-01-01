@@ -2,6 +2,7 @@
 exports.slide=function(currentArray){
 	$('#left-bar h3 a').click(function(){
 		$(this).toggleClass('active');
+		$(this).closest('h3').siblings('h3').find('a').removeClass('active');
 		$(this).closest('h3').next('ul').slideToggle();
 	})
 	if (currentArray && currentArray instanceof Array) {
