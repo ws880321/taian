@@ -58,12 +58,12 @@ transition: transform 1s;}
 }
  .screen li span.title{
  	display: inline-block;
- 	width: 90px;
+ 	width: 100px;
  	text-align: right;
  }
  .screen li.half{
  	display: inline-block;
- 	width: 50%;
+ 	width: 48%;
  }
  .screen li.one-third{
  	display: inline-block;
@@ -99,6 +99,8 @@ transition: transform 1s;}
 .a-btn.edit{background-position: 0px 0px;}
 .a-btn.del{background-position: -47px 0px;}
 .a-btn.details{background-position: -97px 0px;}
+.a-btn.insurance{background-image: none;text-indent: 0;margin-right: 10px;}
+.a-btn.log{background-image: none;text-indent: 0;}
 
 .mrb10{margin-bottom: 10px;}
 

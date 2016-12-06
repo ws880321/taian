@@ -1,13 +1,18 @@
-@charset "utf-8";      
+@charset "utf-8"; 
+.pagination{
+	padding: 20px  0;
+	text-align: right;
+	
+}     
 .pagination a {
     text-decoration: none;
-	border: 1px solid #AAE;
+	// border: 1px solid #AAE;
 	color: #15B;
 }
 
 .pagination a, .pagination span {
     display: inline-block;
-    padding: 0.1em 0.4em;
+    padding: 0.1em 0.6em;
     margin-right: 5px;
 	margin-bottom: 5px;
 }
@@ -15,7 +20,7 @@
 .pagination .current {
     background: #26B;
     color: #fff;
-	border: 1px solid #AAE;
+	// border: 1px solid #AAE;
 }
 
 .pagination .current.prev, .pagination .current.next{
