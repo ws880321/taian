@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- 公共样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <!-- 当前页面样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/dispatchd.css">
+    <title>泰安</title>
+</head>
+
+<body>
+    <!-- 引用header-头部  -->
+    @@include('./include/header.html')
+    <!-- 页面主体 -->
+    <div id="main-wrap" class="main-wrap">
+        <!-- 引用主体内容-左侧菜单 -->
+        @@include('./include/leftBar.html')
+        <!-- 内容部分 -->
+        <div class="main-body dispactchd">
+            <div class="box  mrb10">
+                <div class="screen">
+                    <ul>
+                        <li class="one-third">
+                            <span class="title">任务编码：</span>
+                            <input type="text" class="s-input">
+                        </li>
+                        <li class="one-third">
+                            <span class="title">任务状态：</span>
+                            <select class='s-input s-select'>
+                                <option value='0'>全部：</option>
+                                <option value='0'>全部：</option>
+                            </select>
+                        </li>
+                        <li class="one-third">
+                            <span class="title">收货地址：</span>
+                            <input type="text" class="s-input">
+                        </li>
+                        <li class="">
+                            <span class="title">上报时间：</span>
+                            <input type="text" class="s-input" id="start-date"> -
+                            <input type="text" class="s-input" id="end-date">
+                        </li>
+                        <li class="center">
+                            <input type="button" class="btn" value='查找'>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <div class="table-box">
+                    <h2 class="cf">
+                        <div class="btn-box">
+                            <input type="button" class='btn btn-small' value='新增'>
+                            <input type="button" class='btn btn-small' value='指派'>
+                            <input type="button" class='btn btn-small' value='Excel导出'>
+                        </div>
+                    </h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" name="" class="ck-input" id="selectAll"><label>全选</label></th>
+                                    <th>任务编码</th>
+                                    <th>养殖户编码</th>
+                                    <th>有无保险</th>
+                                    <th>联系电话</th>
+                                    <th>收运地址</th>
+                                    <th>上报时间</th>
+                                    <th>指派司机</th>
+                                    <th>计划出车时间</th>
+                                    <th>状态</th>
+                                    <th>来源</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="" class='ck-input'></td>
+                                    <td>2016101101</td>
+                                    <td>z0001</td>
+                                    <td>无</td>
+                                    <td>12345678901</td>
+                                    <td>省庄镇北许村</td>
+                                    <td>2016年10月11日 15：34</td>
+                                    <td>老司机</td>
+                                    <td>2016年10月12日 8：00</td>
+                                    <td>司机已移交</td>
+                                    <td>400电话</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                        <a href="javascript:;" class="a-btn del">详情</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" class='ck-input'></td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- 公共库 -->
+<script type="text/javascript" src='../js/lib.js'></script>
+<!-- 公用部分及组件 -->
+<script type="text/javascript" src='../js/common.js'></script>
+<!-- 当前页面js -->
+<script type="text/javascript" src='../js/dispatchd.js'></script>
+
+</html>
