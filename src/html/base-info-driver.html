@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- 公共样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <!-- 当前页面样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/dispatchd.css">
+    <title>司机管理</title>
+</head>
+
+<body>
+    <!-- 引用header-头部  -->
+    @@include('./include/header.html')
+    <!-- 页面主体 -->
+    <div id="main-wrap" class="main-wrap">
+        <!-- 引用主体内容-左侧菜单 -->
+        @@include('./include/leftBar.html')
+        <!-- 内容部分 -->
+        <div class="main-body dispactchd">
+            <div class="box  mrb10">
+                <div class="screen">
+                    <ul>
+                        <li class="half">
+                            <span class="title">司机姓名：</span>
+                            <input type="text" class="s-input">
+                        </li>
+                        <li class="half">
+                            <span class="title">驾龄：</span>
+                            <input type="text" class="s-input">
+                        </li>
+                        <li class="half">
+                            <span class="title">驾驶证号：</span>
+                            <input type="text" class="s-input">
+                        </li>
+                        <li class="center">
+                            <input type="button" class="btn" value='查找'>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <div class="table-box">
+                    <h2 class="cf">
+                        <div class="btn-box">
+                            <input type="button" class='btn btn-small' value='添加'>
+                        </div>
+                    </h2>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" name="" class="ck-input" id="selectAll">
+                                        <label>全选</label>
+                                    </th>
+                                    <th>司机姓名</th>
+                                    <th>驾驶证号</th>
+                                    <th>驾龄</th>
+                                    <th>有效起始日期</th>
+                                    <th>有效期</th>
+                                    <th>工作证号</th>
+                                    <th>司机电话</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="" class='ck-input'>
+                                    </td>
+                                    <td>老司机</td>
+                                    <td>361121194409208510</td>
+                                    <td>8年</td>
+                                    <td>2005-09-12</td>
+                                    <td>10年</td>
+                                    <td>361101835249</td>
+                                    <td>10吨</td>
+                                    <td class="nwp">
+                                        <a href="javascript:;" class="a-btn edit">编辑</a>
+                                        <a href="javascript:;" class="a-btn details">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="page" class="pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- 公共库 -->
+<script type="text/javascript" src='../js/lib.js'></script>
+<!-- 公用部分及组件 -->
+<script type="text/javascript" src='../js/common.js'></script>
+<!-- 当前页面js -->
+<script type="text/javascript" src='../js/base-info-driver.js'></script>
+
+</html>
